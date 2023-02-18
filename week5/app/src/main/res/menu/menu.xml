@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/chooseMap" android:title="@string/ChooseMap"/>
+    <item android:id="@+id/setLangLong" android:title="@string/LatLong"/>
+    <item android:id="@+id/preferences" android:title="@string/pref"/>
+</menu>

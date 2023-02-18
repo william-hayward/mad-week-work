@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">week7</string>
+    <string name="id">ID:</string>
+    <string name="title">Title:</string>
+    <string name="artist">Artist:</string>
+    <string name="year">Year:</string>
+    <string name="btn1">Search</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnUpdate">Update</string>
+    <string name="btnDelete">Delete</string>
+</resources>

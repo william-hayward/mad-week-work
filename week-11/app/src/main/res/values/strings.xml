@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">week-11</string>
+    <string name="person">Person:</string>
+    <string name="go">Go!</string>
+</resources>

@@ -1,0 +1,156 @@
+MAD session 1 - worksheet answers:
+
+1. Hello world - 
+
+fun main(args: Array<String>) {
+  println("Hello world!")
+}
+
+
+
+2. loops and ifs - basic 
+
+a)
+
+fun main(args: Array<String>) {
+  println("Please enter your name: ")
+  val name = readLine()
+  for (i in 1..10) {
+    println(name)
+  }
+}
+
+
+
+b)
+
+fun main(args: Array<String>) {
+
+  println("Please enter your name: ")
+  val name = readLine()
+
+  println("How many times do you want to display the name?")
+  val amount  = readLine()
+
+  println("")
+
+  val amount_int = amount?.toInt() ?: 0 // changes to an integer - null = 0
+
+  for (i in 1..amount_int) {
+    println(name)
+  }
+  
+}
+
+
+
+3. looping through an array - 
+
+a)
+
+fun main(args: Array<String>) {
+  val artists = arrayOf("artist1", "artist2", "artist3")
+  println("Please enter an artist's name:")
+  val response = readLine()
+
+  val msg = if(response in artists) "Yes! $response is one of my favourite artists!" else "No! $response is not one of my favourite artists! Try again."
+  println(msg)
+  
+}
+
+
+
+b)
+
+fun main(args: Array<String>) {
+  val artists = arrayOf("artist1", "artist2", "artist3")
+
+  for(i in 1..10) {
+    println("Please enter an artist's name:")
+    val response = readLine()
+
+    if(response in artists){
+      println("Yes! $response is one of my favourite artists!")
+      break
+    }
+    else{
+      println("No! $response is not one of my favourite artsits! Try again")
+      println("Attempts left: ${10 - i}")
+    }
+  }
+}
+
+
+
+4. when - 
+
+fun main(args: Array<String>) {
+  println("Please enter a grade:")
+  val grade = readLine()
+  val grade_int = grade?.toInt() ?:0
+
+  val degree = when(grade_int) {
+    in 0..29 -> "F"
+    in 30..39 -> "E"
+    in 40..49 -> "D"
+    in 50..59 -> "C"
+    in 60..69 -> "B"
+    in 70..100 -> "A"
+    else -> "Invalid grade"
+  }
+  println("Your degree is: $degree.")
+}
+
+
+
+5. Classes and objects - 
+
+fun main(args: Array<String>) {
+  val car1 = Car("Ford", "Focus", 50, 120)
+  val car2 = Car("BMW", "idk", 100, 150)
+
+  println("Car 1 $car1")
+  println("Car 2 $car2")
+  // you dont have to put .toString when you want to print it. you can just do that ^ and it will automatically do toString()
+
+  car1.accelerate(10)
+  car2.accelerate(20)
+
+  println("\nCar 1 ${car1.toString()}")
+  println("Car 2 ${car2.toString()}")
+
+  car1.decelerate(5)
+  car2.decelerate(10)
+
+  println("\nCar 1 ${car1.toString()}")
+  println("Car 2 ${car2.toString()}")
+}
+
+class Car (val make: String, val model: String, val cc : Int, val topSpeed : Int) {
+
+  var currentSpeed = 0 
+
+  fun accelerate(i : Int) {
+    if (this.currentSpeed + i <= this.topSpeed){
+      this.currentSpeed = this.currentSpeed + i
+    }
+    else {
+      println("Error! you tried to accelerate past the top speed")
+    }
+  }
+
+  fun decelerate(i : Int){
+    if (this.currentSpeed + i >= 0){
+      this.currentSpeed = this.currentSpeed - i
+    }
+    else {
+      println("Error! you tried to decelerate past 0")
+    }
+  }
+
+  override fun toString(): String {return("make: $make, model: $model, engine capacity: $cc, current speed: $currentSpeed")}
+}
+
+
+
+

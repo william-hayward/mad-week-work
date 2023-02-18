@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">week10</string>
+    <string name="Search">Search For Songs</string>
+    <string name="Create">Add A Song To The Database</string>
+    <string name="btnSearch">Search For Songs</string>
+    <string name="btnCreate">Create Item In Database</string>
+    <string name="CreateASong">Create A Song In The Database:</string>
+    <string name="Title">Song Title:</string>
+    <string name="Artist">Artist Name:</string>
+    <string name="Year">"Release Year:"</string>
+</resources>

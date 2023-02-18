@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">week8</string>
+    <string name="btn1">Lookup Artist\'s Songs</string>
+    <string name="Artist">Artist:</string>
+    <string name="Song">Song:</string>
+    <string name="Year">Year:</string>
+    <string name="btnCreate">Create Record</string>
+    <string name="Search">Search Activity</string>
+    <string name="Choose">Create Activity</string>
+</resources>

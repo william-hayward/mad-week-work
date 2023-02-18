@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">week5</string>
+    <string name="ChooseMap">Choose Map</string>
+    <string name="regularview">regular view</string>
+    <string name="opentopomapview">open topo map view</string>
+    <string name="setLatLong"><![CDATA[Set Latitude & Longitude]]></string>
+    <string name="btn1">Set Values</string>
+    <string name="LatLong"><![CDATA[Set Lat & Long Values]]></string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="pref">Set Preferences</string>
+</resources>

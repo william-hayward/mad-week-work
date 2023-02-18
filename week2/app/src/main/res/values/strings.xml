@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator App</string>
+    <string name="hello">Hello World!</string>
+    <string name="btn1">+</string>
+    <string name="btn2">-</string>
+    <string name="btn3">x</string>
+    <string name="btn4">/</string>
+</resources>
